@@ -1,0 +1,238 @@
+@import "common.css";
+
+body{
+	padding:0px;
+	margin:0px;
+	background: #DBDBDC url(../img/bg2.png) repeat-y left center;
+	font-family: "微软雅黑"；
+}
+
+.clearfix {
+  overflow: auto;
+  zoom: 1;
+}
+
+.q1_head{
+	/*float: left;*/
+	width: 750px;
+	height: 40px;
+	margin-top: 85px;
+	position: relative;
+	line-height: 40px;
+	background-color: #c8b414;
+}
+.q1_head_Chi{
+	display: inline-block;
+	float: right;
+	line-height: 40px;
+	margin-right: 18px;
+	font-size: 20px;
+	color: #141414;
+}
+.q1_head_Eng{
+	display: inline-block;
+	float: right;
+	line-height: 40px;
+	margin-right: 12px;
+	font-size: 15px;
+	color: #b4c8b4;
+}
+.q_list{
+	width:960px;
+	margin-left:16%;
+	position: relative;
+}
+
+.q_smain{
+	min-height: 970px;
+	background: url(../img/spine.png) repeat-y 370px 0;
+	padding-top: 0px;
+	padding-left: 500px;
+	position: relative; 
+}
+
+.q_smain-1,.q_smain-2,.q_smain-3{
+	width: 180px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	display: block;
+	color: #B0B000;
+	text-shadow:0 1px 1px rgba(0,0,0,.3);
+	font-weight: bold;
+	font-size: 18px;
+	position: relative;
+	left: -380px;
+	clear: both;
+	background: #fff;
+	border-radius:8px;
+	top: 130px;
+}
+
+.q_smain-item{
+	width: 400px;
+	min-height: 100px;
+	background: #fff;
+	border-radius: 6px;
+	margin: 80px 30px 0 -40px;
+	position: relative;
+	color: #888;
+	float:left; 
+	display:inline;
+}
+
+.q_smain-item-icon-arrow{
+	position: absolute;
+	left: -10px;
+	top: 24px;
+	height: 0px;
+	border-color: transparent #fff transparent transparent;
+	border-width: 10px 10px 10px 0;
+	border-style: dashed solid dashed dashed;
+}
+.q_smain-item-icon-dot{
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	left: -131px;
+	top: 0px;
+}
+.q_smain-item-icon-dot img{border-radius: 50%;}
+
+.q_smain-item-icon-head{
+	padding: 15px;
+	padding-bottom: 0px;
+}
+.q_smain-item-icon-head-title {
+	height: 36px;
+	line-height: 36px;
+	font-size: 20px;
+	font-weight: bold;
+	padding-left:5px; 
+	position: relative;
+	color: #B0B000;
+	text-decoration: none;
+	text-align: center;
+}
+.q_smain-item-icon-media{
+	width: 95%;
+	margin: 0 auto;
+	background: #F5F5F5;
+	padding-top: 5px;
+	padding-left: 10px;
+}
+
+#q_footer{
+	width: 810px;
+	height: 555px;
+	margin-left: 20%;
+	background: #fff;
+	margin-top: 0; 
+	border-radius: 8px;
+}
+.q_welcome{
+	float: left;
+	margin-left:6%;
+	margin-top: 60px;
+}
+.q_form{
+	width: 450px;
+	min-height: 100px;
+	background: #F0F0F0;
+	border-radius: 6px;
+	margin-left:2%;
+	margin-right: 4%;
+	margin-top: 40px;
+	position: relative;
+	color: #5F5F5D;
+	display:inline;
+	font-size: 16px;
+	float: right;
+}
+.q_formtitle{
+	width: 450px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	font-size: 1.2em;
+	border-radius: 6px 6px 0 0;
+	background: #c8b43c url(../img/logo01.png)no-repeat 2% 50%;
+}
+.form_style{
+	width:210px;
+	height:25px;
+	border:1px solid #ccc;
+	font-size:13px;
+	border-radius:3px;
+
+}
+.q_name{
+	margin:15px 0 0 40px;
+	width:350px;
+	height:40px;
+	padding-left:10px; 
+}
+.q_number{
+	margin:10px 0 0 8px;
+	width:350px;
+	height:40px;
+	padding-left:10px; 
+}
+.q_e-mail{
+	margin:10px 0 0 40px;
+	width:350px;
+	height:40px;
+	padding-left:10px;
+}
+.q_direction{
+	margin:10px 0 0 8px;
+	width:350px;
+	height:40px;
+	padding-left:10px;
+}
+.q_introduction{
+	margin:10px 0 0 8px;
+	width:350px;
+	height:40px;
+	padding-left:10px;
+}
+.q_textarea-style{
+	width:250px;
+	height:200px;
+	border:1px solid #ccc;
+	font-size:13px;
+	border-radius:3px;
+	vertical-align: top;
+}
+.form-button{
+	margin:180px 0 0 90px;
+	width:170px;
+	height:40px;
+	padding-left:10px;
+}
+.q_button-style{
+	float:left;
+	width:68px;
+	height:30px;
+	margin:0 15px 0 0;
+	border:1px solid #999;
+	background:#F0F050;
+	border-radius:9px;
+	font-size:17px;
+	color:#17475d;
+	cursor:pointer;
+	text-transform:uppercase;
+	box-shadow:0 1px 0 rgba(255,255,255,0.3) inset,0 1px 0 #fff;
+	opacity:0.87;
+}
+.q_button-style:hover{
+	background: -moz-linear-gradient(to top, #B5DEF2, #85CFEE);
+}
+.form_style:FOCUS {
+    border: 3px solid #B7D4EA;
+    box-shadow: 0 0 8px #B7D4EA;
+}
+.q_textarea-style:FOCUS {
+    border: 3px solid #B7D4EA;
+    box-shadow: 0 0 8px #B7D4EA;
+}

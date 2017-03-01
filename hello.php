@@ -1,3 +1,0 @@
-<?php
-	good morning!
-?>

@@ -1,0 +1,224 @@
+@import "common.css";
+
+            body{
+                 background-color: #DBDBDC;
+                color: #555;
+                font-family: 'Avenir Next', '微软雅黑';
+                /*font-size: 14px;*/
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+            }
+            .snav{
+                margin-top: 85px;
+                width: 750px;
+                height:40px;
+                background-color: #5f5f5d;
+                display: block;
+                margin-bottom: 10px;
+                color: #aeaea5; 
+                font-size: 16px;
+                text-indent: 10px;
+                line-height: 50px;
+                position: relative;
+                clear: both;
+                float: right;
+                line-height: 40px;
+
+            }
+            .snav d{
+                font-size: 18px;
+                color:#fff;
+            }
+            .wrap{
+                width: 100%;
+                height: 600px;
+                position: relative;
+                top: ;
+                margin-top:0px;
+                background-color: #DBDBDC;
+                overflow: hidden;
+                perspective: 800px;
+                -webkit-perspective: 800px;
+            }
+            /* 海报样式 s*/
+            .photo{
+                position: absolute;
+                width: 260px;
+                height: 370px;
+                z-index: 1;
+                box-shadow: 0 0 1px rgba(0, 0, 0, .01);
+                transition: all .5s;
+                -moz-transition: all .5s; 
+                -webkit-transition: all .5s; 
+                -o-transition: all .5s;
+                left: 50%;
+                top: 50%;
+                margin: -160px 0 0 -130px;
+            }
+            .photo .photo-wrap .side{
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background-color: #eee;
+                top: 0;
+                right: 0;
+                padding: 20px;
+                box-sizing: border-box;
+                -moz-box-sizing：border-box;
+                backface-visibility:hidden;
+                -webkit-backface-visibility:hidden;    
+                -moz-backface-visibility:hidden;     
+                -ms-backface-visibility:hidden;     
+            }
+
+
+            .photo .photo-wrap .side-front{
+                transform: rotateY(0deg);
+                -webkit-transform: rotateY(0deg);
+                -moz-transform: rotateY(0deg);
+                -o-transform: rotateY(0deg);
+                -ms-transform: rotateY(0deg);
+            }
+
+            .photo .photo-wrap .side-front .image{
+                width: 100%;
+                height: 300px;
+                line-height: 300px;
+                overflow: hidden;
+                margin: 0;
+            }
+            .photo .photo-wrap .side-front .image img{
+                width: 100%;
+                vertical-align: middle;
+            }
+            .photo .photo-wrap .side-front .caption{
+                text-align: center;
+                font-size: 16px;
+                line-height: 50px;
+                margin: 0;
+            }
+            
+            .photo .photo-wrap .side-back{
+                transform: rotateY(180deg);
+                -webkit-transform: rotateY(180deg);
+                -moz-transform: rotateY(180deg);
+                -o-transform: rotateY(180deg);
+                -ms-transform: rotateY(180deg);
+            }
+            .photo .photo-wrap .side-back .desc{
+                color: #666;
+                font-size: 14px;
+                line-height:30px;
+            }
+            /*当前选中的海报样式*/
+            .photo_center{
+                top: 50%;
+                left: 50%;
+                margin: -160px 0 0 -130px;
+                z-index: 2;
+            }
+            /*负责翻转*/
+            .photo .photo-wrap{
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                transform-style: preserve-3d;
+                -webkit-transform-style: preserve-3d;
+
+                transition: all .6s ease-in-out;
+                -webkit-transition: all .6s ease-in-out;/* Safari 和 Chrome */
+                -moz-transition: all .5s; /* Firefox 4 */
+                -o-transition: all .5s; /* Opera */
+
+    
+                transform-origin: 0% 50% 0px;
+                -ms-transform-origin: 0% 50% 0px;/* IE 9 */
+                -o-transform-origin: 0% 50% 0px;/* Opera */
+                -webkit-transform-origin: 0% 50% 0px;/* Safari 和 Chrome */
+                -moz-transform-origin: 0% 50% 0px;/* Firefox */
+            }
+            .photo_front .photo-wrap{/* .photo_front 是添加到 div.photo 的类 */
+                transform: translate(0px, 0px) rotateY(0deg);
+                -webkit-transform: translate(0px, 0px) rotateY(0deg);
+                -moz-transform: translate(0px, 0px) rotateY(0deg);
+                -o-transform: translate(0px, 0px) rotateY(0deg);
+                -ms-transform: translate(0px, 0px) rotateY(0deg);
+            }
+            .photo_back .photo-wrap{/* .photo_back 是添加到 div.photo 的类*/
+                transform: translate(260px, 0px) rotateY(180deg);
+                -webkit-transform: translate(260px, 0px) rotateY(180deg);
+                -moz-transform: translate(260px, 0px) rotateY(180deg);
+                -o-transform: translate(260px, 0px) rotateY(180deg);
+                -ms-transform: translate(260px, 0px) rotateY(180deg);
+            }
+            
+
+            /* 添加控制按钮的样式 */
+            @font-face{
+                font-family: 'icon';
+                src: url('javascript:void(0)') format('woff');
+                font-weight: normal;
+                font-size: normal;
+            }
+            .nav{
+                position: absolute;
+                width: 80%;
+                left: 10%;
+                height: 30px;
+                line-height: 30px;
+                bottom: 20px;
+                z-index: 3;
+                text-align: center;
+            }
+            /* 普通样式 */
+            .nav .i{
+                display: inline-block;
+                width: 30px;
+                height: 30px;
+                cursor: pointer;
+                background-color: #cc9;
+                text-align: center;
+                border-radius: 50px;
+                transform: scale(.5);
+                -webkit-transform: scale(.5);
+                -moz-transform: scale(.5);
+                -o-transform: scale(.5);
+                -ms-transform: scale(.5);
+
+                transition: all .5s;
+                -webkit-transition: all .5s;
+                -moz-transition: all .5s;
+                -o-transition: all .5s;
+            }
+            /* 设置并显示字体图标 */
+            .nav .i:after{
+                content: '\e965';
+                font-family: 'icomoon';
+                font-size: 80%;
+                display: inline-block;
+                line-height: 30px;
+                text-align: center;
+                color: #fff;
+                opacity: 0;
+            }
+            /* 选中样式 */
+            .nav .i_current{
+                transform: scale(1);
+                -webkit-transform: scale(1);
+                -moz-transform: scale(1);
+                -o-transform: scale(1);
+                -ms-transform: scale(1);
+            }
+            .nav .i_current:after{
+                opacity: 1;
+            }
+            /* 背面样式 */
+            .nav .i_back{
+                background-color: #555;
+                transform: rotateY(180deg);
+                -webkit-transform: rotateY(180deg);
+                -moz-transform: rotateY(180deg);
+                -o-transform: rotateY(180deg);
+                -ms-transform: rotateY(180deg);
+            }            
+        /*</style>*/

@@ -1,0 +1,154 @@
+var data = [];
+var dataStr = '1、曾庆仲<br>\
+<br>\
+·name:曾庆仲<br>\
+·email:945661494@qq.com<br>\
+·work:前端<br>\
+·introduce:<br>\
+·想想我们曾经无关 又何必彼此为难。<br>\
+<br>\
+<br>\
+2、秦梦诗<br>\
+<br>\
+·name:秦梦诗<br>\
+·email:1666817982@qq.com<br>\
+·work:前端<br>\
+·introduce:<br>\
+·青春就是爱情友情梦想和热血。因为青春，所以来得及。<br>\
+<br>\
+<br>\
+3、黄静<br>\
+<br>\
+·name:黄静<br>\
+·email:1240706516@qq.com<br>\
+·work:前端<br>\
+·introduce:<br>\
+·此刻的别离，我们沉默不语。不经世的我们，约好下一个路口等。<br>\
+<br>\
+<br>\
+4、莫小兵<br>\
+<br>\
+·name:莫小兵<br>\
+·email:1377392896@qq.com<br>\
+·work:<br>\
+·introduce:<br>\
+·你知道吗 听一个人说话，不要听他说了什么，而是要听他没说什么。<br>\
+<br>\
+<br>\
+5、向坤<br>\
+<br>\
+·name:向坤<br>\
+·email:shin.8974@qq.com<br>\
+·work:前端<br>\
+·introduce:<br>\
+·人生的道路就如同内裤，每一条都是自己选的。<br>\
+<br>\
+<br>\
+6、冯文峰<br>\
+<br>\
+·name:冯文峰<br>\
+·email:874747663@qq.com<br>\
+·work:前端<br>\
+·introduce:<br>\
+·她们都是你漫漫长路上，只配错过的好姑娘。<br>\
+<br>\
+<br>\
+7、袁珺<br>\
+<br>\
+·name:袁珺<br>\
+·email:23360292732qq.com<br>\
+·work:<br>\
+·introduce:<br>\
+·世界上最痛苦的事，不是无能为力，而是当一切都触手可及，我却不愿伸出手去。<br>\
+<br>\
+<br>\
+8、焦贵彬<br>\
+<br>\
+·name:焦贵彬<br>\
+·email:616584789@qq.com<br>\
+·work:前端<br>\
+·introduce:<br>\
+·既然已匆匆，不如早怀念。<br>\
+<br>\
+<br>\
+9、刘奇<br>\
+<br>\
+·name:刘奇<br>\
+·email:<br>\
+·work:后台<br>\
+·introduce:<br>\
+·总有一天，我会带你去只有我们两个人的地方。<br>\
+<br>\
+<br>\
+10、刘晓薇<br>\
+<br>\
+·name:刘晓薇<br>\
+·email:liuxiaowei1996@qq.com<br>\
+·work:后台<br>\
+·introduce:<br>\
+·我也不知道那只美丽的玻璃鞋能否合我的脚。但是……如果合脚，你能接受这个真实的我吗？<br>\
+<br>\
+<br>\
+11、高翔<br>\
+<br>\
+·name:高翔<br>\
+·email:www.gaoxiangki.com@qq.com<br>\
+·work:<br>\
+·introduce:<br>\
+·我只能送你到这里了，剩下的路你要自己走，不要回头。<br>\
+<br>\
+<br>\
+12、孙凤琴<br>\
+<br>\
+·name:孙凤琴<br>\
+·email:732598573@qq.com<br>\
+·work:前端<br>\
+·introduce:<br>\
+·大雄：“我不想长高” 多啦A梦：“为什么” 大雄：“因为我长高了哆啦A梦就不能牵到我的手了”<br>\
+<br>\
+<br>\
+13、李康<br>\
+<br>\
+·name:李康<br>\
+·email:1040241228@qq.com<br>\
+·work:前端<br>\
+·introduce:<br>\
+·做个好女孩，就像你从前一样。<br>\
+<br>\
+<br>\
+14、马璐敏<br>\
+<br>\
+·name:马璐敏<br>\
+·email:1370475739@qq.com<br>\
+·work:前端<br>\
+·introduce:<br>\
+·我们有时并不想成为英雄，只是生活有时候超出我们的想象。<br>\
+<br>\
+<br>\
+15、舒麟媛<br>\
+<br>\
+·name:舒麟媛<br>\
+·email:1562063200@qq.com<br>\
+·work:前端<br>\
+·introduce:<br>\
+·人不是生来就懂得爱。<br>\
+<br>\
+<br>\
+16、王博<br>\
+<br>\
+·name:王博<br>\
+·email:994283567@qq.com<br>\
+·work:前端<br>\
+·introduce:<br>\
+·You just officially hadabcthe worst date ever. 你圆满完成了史上最糟糕约会<br>\
+';
+var d = dataStr.split('<br><br><br>');
+for (var i = 0; i < d.length; i++) {
+    var c = d[i].split('<br><br>');
+    data.push({
+        img: c[0].replace('、', ' ') + '.jpg',
+        caption: c[0].split('、')[1],
+        desc: c[1]
+    });
+    //console.log(c[0].replace('、', ' ') + '.jpg');
+};

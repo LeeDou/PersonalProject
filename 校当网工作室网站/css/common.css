@@ -1,0 +1,280 @@
+html, body, ul, li{
+	margin: 0;
+	padding: 0;
+	font-family: "微软雅黑";
+	color: #AEAEA5;
+}
+
+/* Header */
+
+#header {
+	position: fixed;
+	top: 0;
+	_position:absolute;
+    _top:expression(documentElement.scrollTop + "px");
+	width: 100%;
+	height: 60px;
+	margin: 0;
+	padding: 0;
+	background-color: #DBDBDC;
+	overflow: hidden;
+	z-index: 999;
+}
+
+#hea_wap {
+	position: relative;
+	width: 100%;
+	height: 60px;
+	margin: 0 auto;
+	background-color: #142814;
+	overflow: hidden;
+}
+
+#z_logo img {
+	position: absolute;
+	top: 0;
+	left: 150px;
+	border: 0;
+}
+
+.motto {
+	display: inline-block;
+	position: absolute;
+	top: 30px;
+	left: 235px;
+	color: #AEAEA5;
+	font-size: .9em;
+} 	
+
+/* 导航样式开始 */
+#z_nav {
+	position: absolute;
+	top: 0;
+	left: 574px;
+	width: 576px;
+	height: 60px;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+#z_nav ul {
+	width: 576px;
+	height: 60px;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+#z_nav li {
+	float: left;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+#z_nav li a {
+	display: block;
+	height: 22px;
+	width: 80px;
+	padding: 19px 8px; 
+	text-align: center;
+	text-decoration: none;
+	font-weight: 500;
+	letter-spacing: 2px;
+	color: #AEAEA5;
+	cursor:pointer;
+}
+
+#z_nav li a:hover {
+	color: #7B7B6F;
+}
+
+#navCur {
+	display: block;
+	float: none;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 80px;
+	height: 8px;
+	margin: 0;
+	padding: 0 8px;
+	background-color: #3C6428;
+	cursor: pointer;
+	overflow: hidden;
+	
+}
+/* 导航样式结束 */
+
+/* 登陆样式开始 */
+#z_loginbtn {
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 60px;
+	width: 60px;
+	text-decoration: none;
+	color: #596F6C;
+	cursor: pointer;
+	background: #142814 url(../img/login.png) no-repeat left top;
+	z-index: 1000;
+}
+
+#mask {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: #000;
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+	z-index: 1000;
+}
+
+#z_login {
+	position: fixed;
+	left: 36%;
+	top: 27%;
+	background-color: #f0f0f0;
+	border-radius: 3px;
+	z-index: 1001;
+}
+
+.loginBox {
+    background-color: #f0f0f0;
+    border: 1px solid #BfD6E1;
+    border-radius: 5px;
+    color: #AEAEA5;
+    font: 14px 'Microsoft YaHei','微软雅黑';
+    margin: 0 auto;
+    width: 388px;
+}
+.loginBox .loginBoxCenter {
+    border-bottom: 1px solid #DDE0E8;
+    padding: 24px;
+}
+.loginBox .loginBoxCenter p {
+    margin-bottom: 10px
+}
+.loginBox .loginBoxButtons {
+    background-color: #dcdca0
+    border-top: 1px solid #FFF;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    line-height: 28px;
+    overflow: hidden;
+    padding: 20px 24px;
+    vertical-align: center;
+}
+.loginBox .loginInput {
+    border: 1px solid #D2D9dC;
+    border-radius: 2px;
+    color: #AEAEA5;
+    font: 12px 'Microsoft YaHei','微软雅黑';
+    padding: 8px 14px;
+    margin-bottom: 8px;
+    width: 310px;
+}
+.loginBox .loginInput:FOCUS {
+    border: 1px solid #B7D4EA;
+    box-shadow: 0 0 8px #B7D4EA;
+}
+.loginBox .loginBtn {
+    background-image: -moz-linear-gradient(to bottom, #f0f050, #f0f050);
+    border: 1px solid #98CCE7;
+    border-radius: 20px;
+    box-shadow:inset rgba(255,255,255,0.6) 0 1px 1px, rgba(0,0,0,0.1) 0 1px 1px;
+    color: #AEAEA5;
+    cursor: pointer;
+    float: right;
+    font: bold 13px Arial;
+    padding: 5px 14px;
+    background-color: #f0f050;
+}
+.loginBox .loginBtn:HOVER {
+    background-image: -moz-linear-gradient(to top, #B5DEF2, #85CFEE);
+}
+
+.register {
+	color: #AEAEA5;
+    font: bold 13px Arial;
+    text-decoration: none;
+}
+
+#close {
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 30px;
+	height: 30px;
+	background: url(../img/delete.png) 2% 50%;
+	z-index: 99999;
+}
+
+.z_login_title {
+	height: 30px;
+	padding-left: 38px;
+	padding-top: 5px; 
+	border-radius: 3px 3px 0 0;
+	font-size: 1.2em;
+	letter-spacing: 2px;
+	background: #c8b43c url(../img/logo01.png)no-repeat 2% 50%;
+	color: #787850;
+}
+/* 登陆样式结束 */
+
+/* End Header */
+
+
+/* Content */
+
+#content {
+	width: 100%;
+	overflow: hidden;
+	margin-top: 60px;
+}
+
+#con_wap {
+	width: 100%;
+	height: 1000px;
+	overflow: hidden;
+	background: #DBDBDC url(../img/bg2.png) repeat-y left center;
+}
+
+/* 各自版块 */
+
+
+/* 各自版块结束 */
+
+/* End Content */
+
+
+/* Footer */
+
+#footer {
+	display: relative;
+	height: 40px;
+	width: 100%;
+	font-size: .95em;
+	background-color: #000000;
+	color: #EDEDED;
+}
+
+.copyright {
+	position: absolute;
+	width: 100%;
+	height: 40px;
+	padding-top: 25px;
+	text-align: center;
+	background-color: #142814;
+	color: #AEAEA5;
+}
+
+.copyright span {
+	padding: 0 10px;
+	color: #EDEDED;
+}
+
+/* End Footer */
