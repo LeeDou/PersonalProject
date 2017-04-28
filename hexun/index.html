@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>hexun</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+	<h1 class="logo">
+		和讯大数据·新自然语言处理
+	</h1>
+</header>
+<!-- 网页内容 -->
+<div class="form">
+	<form method="get" action="#">
+			<input type="text" name="id" placeholder="输入文章ID" class="searchInput">
+			<input type="submit" value="" class="searchBtn">
+
+	</form>
+</div>
+<div class="content">
+	<div class="main" id="main"></div>
+	<div class="left">		
+		<div class="tab">
+			<table class="table">
+				<thead class="thd">
+					<tr>
+						<th>文章ID</th>
+						<th>上传时间</th>
+						<th>标题</th>
+						<th>栏目</th>
+					</tr>
+				</thead>
+				<tbody class="tbd" id="tbd">
+					
+				</tbody>
+			</table>	
+		</div>	
+	</div>
+	<div class="right">
+		<div class="keyword" id="keyword">
+			<h1>关键词</h1>
+			<div class="keyBox">
+				
+			</div>
+		</div>
+		<div class="column" id="column">
+			<h1>栏目</h1>
+			<div class="colBox">
+				
+			</div>
+		</div>
+		<div class="channel" id="channel">
+			<h1>频道</h1>
+			<div class="chaBox">
+				
+			</div>
+		</div>
+		<div class="title" id="title">
+			<h1>标签</h1>
+			<div class="titBox">
+				
+			</div>
+		</div>
+		<div class="safeRating" id="safeRating">
+			<h1>安全评级</h1>
+			<div class="safBox">
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- <footer>
+	<small>版权所有</small>
+</footer> -->
+<script src="src/jquery-2.2.1.min.js"></script>
+<script src="script.js"></script>	
+</body>
+</html>
